@@ -2,4 +2,4 @@
 참고 사이트: http://www.hyein.com/
 
 ## 데모 사이트 링크
-# hyein_bin
+https://wb96choi.github.io/hyein_bin/
