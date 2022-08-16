@@ -1,1 +1,177 @@
 @import url('style.css');
+
+/* 헤더--------------------------------- */
+#main-header {
+    width: 100vw;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    background-color: transparent;
+    border-bottom: .5px solid #fff;
+    color: #fff;
+    padding: 0 20px;
+    z-index: 10;
+    transition: .5s;
+}
+#main-header.on {
+    transition: .5s;
+    background-color: #fff;
+}
+    /* logo */
+#main-header .logo {
+    position: relative;
+    width: 155px;
+    height: 35px;
+}
+#main-header .logo img {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+}
+#main-header .logo img:first-child {
+    /* display: none; */
+}
+.logoOn {
+    display: none;
+}
+    /* #header-nav (메뉴누르면 나와야함) */
+#main-header #header-nav {
+    display: none;
+}
+
+    /* .util-menu */
+.util-menu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    overflow: hidden;
+}
+    /* Intranet - btn*/
+#intranet {
+    display: none;
+    align-items: center;
+    width: 100px;
+    height: 35px;
+    padding: 0 20px;
+    border: 1px solid #fff;
+    border-radius: 50px;
+    color: #fff;
+}
+#intranet.on {
+    display: flex;
+    border: 1px solid #000;
+    color: #000;
+}
+#intranet .bi-laptop {
+    font-size: 20px;
+}
+#intranet p {
+    font-size: 10px;
+    margin-left: 10px;
+}
+
+    /* toggle-menu-btn */
+#toggle-menu-btn {
+    cursor: pointer;
+    position: relative;
+    /* outline: 2px solid red; */
+    font-size: 50px;
+    width: 50px;
+    height: 80px;
+    color: #fff;
+}
+#toggle-menu-btn.on {
+    color: #000;
+}
+#toggle-menu-btn .bi-list {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: .5s;
+}
+#toggle-menu-btn .bi-list.change {
+    transition: .5s;
+    display: none;
+}
+#toggle-menu-btn .bi-x-circle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: .5s;
+}
+#toggle-menu-btn .bi-x-circle.change {
+    transition: .5s;
+    display: none;
+}
+
+    /* 모바일 토글메뉴 */
+#mobile-toggle-menu {
+    position: fixed;
+    top: 70px;
+    right: 0;
+    width: 100vw;
+    height: calc(100vh - 70px);
+    background-color: #fff;
+    color: #000;
+    transform: translateX(100%);
+    transition: .5s;
+}    
+#mobile-toggle-menu.on {
+    transform: translateX(0);
+    transition: .5s;
+}
+#mobile-toggle-menu .gnb {
+
+}
+#mobile-toggle-menu .gnb > li {
+    width: 100%;
+    /* outline: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    font-weight: 700;
+    font-size: 1.5em;
+}
+#mobile-toggle-menu .gnb > li > a {
+    width: 100%;
+    height: 70px;
+    line-height: 70px;
+    display: block;
+}
+#mobile-toggle-menu .gnb > li > #plus {
+    position: absolute;
+    right: 0;
+    top: 17px;
+    padding-right: 20px;
+    font-size: 1.5em;
+    color: #ff8b00;
+}
+#mobile-toggle-menu .gnb > li > .sub {
+    font-weight: 400;
+    font-size: .7em;
+    width: 100%;
+    margin-top: 0;
+    display: none;
+}
+#mobile-toggle-menu .gnb > li > .sub > li {
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    /* outline: 1px solid blue; */
+}
+#mobile-toggle-menu .gnb > li > .sub > li > a {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+
+
+
+.section {
+    height: 300vh;
+}

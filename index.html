@@ -1,14 +1,12 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- 사이트 소개글 -->
-    <meta
-        name="description"
-        content="혜인 E&C 리뉴얼 페이지입니다."
-    />
+    <meta name="description" content="혜인 E&C 리뉴얼 페이지입니다." />
     <!-- 검색 키워드 -->
     <meta name="keywords" content="이 페이지를, 검색할 수 있는, 키워드를, 적으시면, 됩니다, 성남, 성남아트센터" />
     <!-- 작성자 -->
@@ -17,97 +15,221 @@
     <!-- 사이트명(title) -->
     <meta name="og:site_name" content="최원빈의 성남아트센터" />
     <!-- 웹사이트 대표 이미지(썸네일) -->
-    <meta
-        name="og:image"
-        content="site_thumbnail.jpg"
-    />
+    <meta name="og:image" content="site_thumbnail.jpg" />
     <title>hyein e&c</title>
     <!-- 아이콘 등록 -->
     <link rel="shortcut icon" href="icon.png">
     <!-- 부트스트랩 -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
     <link rel="stylesheet" href="style.css" media="all">
-    <link 
-        rel="stylesheet" 
-        href="pc.css"
-        media="screen and (min-width: 768px)"
-    >
-    <link 
-        rel="stylesheet" 
-        href="mobile.css"
-        media="screen and (max-width: 767px)"
-    >
+    <link rel="stylesheet" href="pc.css" media="screen and (min-width: 768px)">
+    <link rel="stylesheet" href="mobile.css" media="screen and (max-width: 767px)">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="app.js"></script>
+
 </head>
+
 <body>
-    <header id="main-header">
-        <div class="logo">
-            <a href="index.html">
-                <img  src="images/logo.png" alt="혜인 e&c 로고">
-                <img class="logoOn" src="images/logoOn.png" alt="혜인 e&c 로고">
-            </a>
-        </div>
-        <nav id="header-nav">
-            <div class="nav_bg"></div>
-            <ul class="gnb">
-                <li><a href="./">COMPANY</a>
-                    <ul class="sub">
-                        <li><a href="./">CEO인사말</a></li>
-                        <li><a href="./">경영이념</a></li>
-                        <li><a href="./">연혁</a></li>
-                        <li><a href="./">조직도</a></li>
-                        <li><a href="./">면허 및 특허</a></li>
-                    </ul>
-                </li>
-                <li><a href="./">BUSINESS</a>
-                    <ul class="sub">
-                        <li><a href="./">항만분야</a></li>
-                        <li><a href="./">국토계획분야</a></li>
-                        <li><a href="./">환경 및 수자원분야</a></li>
-                        <li><a href="./">해외사업분야</a></li>
-                        <li><a href="./">감리분야</a></li>
-                    </ul>
-                </li>
-                <li><a href="./">R&D</a>
-                    <ul class="sub">
-                        <li><a href="./">연구소 소개</a></li>
-                        <li><a href="./">연구성과</a></li>
-                    </ul>
-                </li>
-                <li><a href="./">PR</a>
-                    <ul class="sub">
-                        <li><a href="./">공지사항</a></li>
-                        <li><a href="./">수주소식</a></li>
-                        <li><a href="./">CI 소개</a></li>
-                        <li><a href="./">홍보자료</a></li>
-                        <li><a href="./">상훈</a></li>
-                    </ul>
-                </li>
-                <li><a href="./">RECRUIT</a>
-                    <ul class="sub">
-                        <li><a href="./">인사제도</a></li>
-                        <li><a href="./">복리후생제도</a></li>
-                        <li><a href="./">채용안내</a></li>
-                    </ul>
-                </li>
-                <li><a href="./">CONTACT</a>
-                    <ul class="sub">
-                        <li><a href="./">협력업체 등록</a></li>
-                        <li><a href="./">오시는 길</a></li>
-                    </ul>
-                </li>
-            </ul>
-        </nav>
-        <button id="intranet">
-            <i class="bi bi-laptop"></i>
-            <p>Intranet</p>
-        </button>
-        <div id="toggle-menu-btn">
-            <i class="bi bi-list"></i>
-            <i class="bi bi-x-circle change"></i>
-        </div>
-    </header>
-    <div class="section" ></div>
+    <div class="wrap">
+        <header id="main-header">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/logo.png" alt="혜인 e&c 로고">
+                    <img class="logoOn" src="images/logoOn.png" alt="혜인 e&c 로고">
+                </a>
+            </div>
+            <nav id="header-nav">
+                <div class="nav_bg"></div>
+                <ul class="gnb">
+                    <li><a href="./">COMPANY</a>
+                        <button id="plus">
+                            <i class="bi bi-plus"></i>
+                        </button>
+                        <ul class="sub">
+                            <li><a href="./">CEO인사말</a></li>
+                            <li><a href="./">경영이념</a></li>
+                            <li><a href="./">연혁</a></li>
+                            <li><a href="./">조직도</a></li>
+                            <li><a href="./">면허 및 특허</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="./">BUSINESS</a>
+                        <button id="plus">
+                            <i class="bi bi-plus"></i>
+                        </button>
+                        <ul class="sub">
+                            <li><a href="./">항만분야</a></li>
+                            <li><a href="./">국토계획분야</a></li>
+                            <li><a href="./">환경 및 수자원분야</a></li>
+                            <li><a href="./">해외사업분야</a></li>
+                            <li><a href="./">감리분야</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="./">R&D</a>
+                        <button id="plus">
+                            <i class="bi bi-plus"></i>
+                        </button>
+                        <ul class="sub">
+                            <li><a href="./">연구소 소개</a></li>
+                            <li><a href="./">연구성과</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="./">PR</a>
+                        <button id="plus">
+                            <i class="bi bi-plus"></i>
+                        </button>
+                        <ul class="sub">
+                            <li><a href="./">공지사항</a></li>
+                            <li><a href="./">수주소식</a></li>
+                            <li><a href="./">CI 소개</a></li>
+                            <li><a href="./">홍보자료</a></li>
+                            <li><a href="./">상훈</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="./">RECRUIT</a>
+                        <button id="plus">
+                            <i class="bi bi-plus"></i>
+                        </button>
+                        <ul class="sub">
+                            <li><a href="./">인사제도</a></li>
+                            <li><a href="./">복리후생제도</a></li>
+                            <li><a href="./">채용안내</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="./">CONTACT</a>
+                        <button id="plus">
+                            <i class="bi bi-plus"></i>
+                        </button>
+                        <ul class="sub">
+                            <li><a href="./">협력업체 등록</a></li>
+                            <li><a href="./">오시는 길</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <div class="util-menu">
+                <button id="intranet">
+                    <i class="bi bi-laptop"></i>
+                    <p>Intranet</p>
+                </button>
+                <div id="toggle-menu-btn">
+                    <i class="bi bi-list"></i>
+                    <i class="bi bi-x-circle change"></i>
+                </div>
+            </div>
+            <div id="mobile-toggle-menu">
+                <ul class="gnb">
+                    <li><a href="./">COMPANY</a>
+                        <button id="plus">
+                            <i class="bi bi-plus"></i>
+                        </button>
+                        <ul class="sub">
+                            <li><a href="./">CEO인사말</a></li>
+                            <li><a href="./">경영이념</a></li>
+                            <li><a href="./">연혁</a></li>
+                            <li><a href="./">조직도</a></li>
+                            <li><a href="./">면허 및 특허</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="./">BUSINESS</a>
+                        <button id="plus">
+                            <i class="bi bi-plus"></i>
+                        </button>
+                        <ul class="sub">
+                            <li><a href="./">항만분야</a></li>
+                            <li><a href="./">국토계획분야</a></li>
+                            <li><a href="./">환경 및 수자원분야</a></li>
+                            <li><a href="./">해외사업분야</a></li>
+                            <li><a href="./">감리분야</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="./">R&D</a>
+                        <button id="plus">
+                            <i class="bi bi-plus"></i>
+                        </button>
+                        <ul class="sub">
+                            <li><a href="./">연구소 소개</a></li>
+                            <li><a href="./">연구성과</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="./">PR</a>
+                        <button id="plus">
+                            <i class="bi bi-plus"></i>
+                        </button>
+                        <ul class="sub">
+                            <li><a href="./">공지사항</a></li>
+                            <li><a href="./">수주소식</a></li>
+                            <li><a href="./">CI 소개</a></li>
+                            <li><a href="./">홍보자료</a></li>
+                            <li><a href="./">상훈</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="./">RECRUIT</a>
+                        <button id="plus">
+                            <i class="bi bi-plus"></i>
+                        </button>
+                        <ul class="sub">
+                            <li><a href="./">인사제도</a></li>
+                            <li><a href="./">복리후생제도</a></li>
+                            <li><a href="./">채용안내</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="./">CONTACT</a>
+                        <button id="plus">
+                            <i class="bi bi-plus"></i>
+                        </button>
+                        <ul class="sub">
+                            <li><a href="./">협력업체 등록</a></li>
+                            <li><a href="./">오시는 길</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </header>
+        <section id="main-visual">
+            <div class="slider">
+                <img src="images/mainImg01.png" alt="mainImg01">
+                <img src="images/mainImg02.png" alt="mainImg02">
+                <img src="images/mainImg03.png" alt="mainImg03">
+            </div>
+        </section>
+
+
+
+
+
+        <footer>
+            <div id="footer-info">
+                <ul class="footer-menu">
+                    <li><strong>개인정보처리방침</strong></li>
+                    <li>이메일무단수집거부</li>
+                    <li>협력업체 등록</li>
+                    <li>오시는 길</li>
+                </ul>
+                <ul class="footer-info">
+                    <li>본사 : (51522) 경상남도 창원시 성산구 중앙대로 61번길 4, 1315호</li>
+                    <li>서울사무소 : (07547) 서울시 강서구 양천로 583 우림블루나인비지니스센터 A동 24층</li>
+                    <li>대표자명 : 안익장/전경철/최용석</li>
+                    <li>전화번호 : 055-268-6900</li>
+                    <li>팩스 : 055-268-6903</li>
+                </ul>
+                <p class="copy">COPYRIGHT © HYEIN E&C. CO., LTD. ALL RIGHTS RESERVED</p>
+            </div>
+            <div id="footer-sns">
+                <div class="footer-sns">
+                    <a href="./">
+                        <img src="images/ico-blog.png" alt="blog">
+                    </a>
+                    <a href="./">
+                        <img src="images/ico-facebook.png" alt="facebook">
+                    </a>
+                </div>
+                <div class="footer-logo">
+                    <img src="images/f-logo.png" alt="footer logo">
+                </div>
+            </div>
+        </footer>
+    </div>
 </body>
+
 </html>
