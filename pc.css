@@ -27,6 +27,8 @@
 }
 #main-header .logo img {
     position: absolute;
+    width: 100%;
+    display: block;
     top: 50%;
     transform: translateY(-50%);
     left: 0;
@@ -54,7 +56,7 @@
     background-color: #fff;
     background-image: url('images/logo_shadow.png');
     background-repeat: no-repeat;
-    background-position-x: right;
+    background-size: cover;
     display: none;
 }
 #main-header #header-nav .nav_bg.on {
@@ -75,8 +77,8 @@
     padding: 0 40px;
 }
 #header-nav .gnb > li:hover > a {
-    color: #ff8b00;
-    border-bottom: 2px solid #ff8b00;
+    color: var(--main-color);
+    border-bottom: 2px solid var(--main-color);
 }
 #header-nav .gnb > li > .sub {
     display: flex;
@@ -176,7 +178,7 @@
     display: none;
 }
 
-
+/* main-visual */
 #main-visual {
     width: 100vw;
     height: 120vh;
@@ -191,14 +193,118 @@
     
 }
 #main-visual .slider img {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
 }
 #main-visual .slider img:not(:first-child) {
     display: none;
 }
+#main-visual article {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+}
+#main-visual article:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+#main-visual article > h1{
+    z-index: 1;
+    font-size: 3em;
+}
+#main-visual article > h4 {
+    z-index: 1;
+    font-size: 1.5em;
+}
 
 
+/* humans */
+#humans {
+    width: 100vw;
+    height: 90vh;
+    position: relative;
+    background-image: url('images/history-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#humans .slider-wrap {
+    width: 80%;
+    height: 100%;
+}
+#humans .slider-wrap .cont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#humans .slider-wrap .cont img {
+    width: 90%;
+    height: 90%;
+    display: block;
+}
+#humans .humans-list {
+    position: absolute;
+    right: 0;
+    top: 0;
+    color: #fff;
+    width: 20%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+#humans .humans-list ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 5vh;
+}
+#humans .humans-list ul > li{
+    
+}
+#humans .humans-list ul > li:hover,
+#humans .humans-list ul > li.on {
+    color: var(--main-color);
+    transition: .5s;
+}
+#humans .humans-title {
+    position: absolute;
+    bottom: 30%;
+    left: 20px;
+    color: #fff;
+    font-size: 2.3em;
+}
+#humans .humans-title hr {
+    border-color: var(--main-color);
+}
 
+
+/* notice */
+#notice {
+    width: 100vw;
+    height: 50vh;
+    display: flex;
+}
+#notice div {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
 /* footer */
 footer {
     width: 100%;
@@ -206,4 +312,52 @@ footer {
     background-color: #fff;
     display: flex;
     justify-content: space-between;
+    padding: 50px;
+}
+footer #footer-info .footer-menu {
+    display: flex;
+}
+footer #footer-info .footer-menu li {
+
+}
+footer #footer-info .footer-menu li:not(:last-child)::after {
+    content: "";
+    display: inline-block;
+    width: 4px;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background: #bbbbbb;
+    margin: 0px 11px 0;
+    transform: translateY(-3px);
+}
+footer #footer-info .footer-info {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+footer #footer-info .footer-info li {
+    color: #ccc;
+}
+footer #footer-info .footer-info li:not(:last-child, :nth-child(2))::after {
+    content: "|";
+    display: inline-block;
+    width: 4px;
+    width: 4px;
+    height: 4px;
+    margin: 0px 11px 0;
+    transform: translateY(-3px);
+}
+footer #footer-info .copy {
+    margin-top: 30px;
+    color: #ccc;
+}
+footer #footer-sns {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    gap: 30px;
+}
+footer #footer-sns .footer-sns {
+    
 }
