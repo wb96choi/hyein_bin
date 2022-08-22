@@ -120,6 +120,7 @@
     color: #000;
     transform: translateX(100%);
     transition: .5s;
+    padding-left: 20px;
 }    
 #mobile-toggle-menu.on {
     transform: translateX(0);
@@ -176,7 +177,7 @@
 /* main-visual */
 #main-visual {
     width: 100vw;
-    height: 47vh;
+    height: 100vh;
     position: relative;
     overflow: hidden;
 }
@@ -191,7 +192,9 @@
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
 }
 #main-visual .slider img:not(:first-child) {
     display: none;
@@ -218,11 +221,12 @@
 }
 #main-visual article > h1{
     z-index: 1;
-    font-size: 3em;
+    font-size: 1.5em;
 }
 #main-visual article > h4 {
     z-index: 1;
-    font-size: 1.5em;
+    margin-top: 20px;
+    font-size: .5em;
 }
 
 
@@ -260,7 +264,7 @@
     display: flex;
     align-items: center;
     cursor: pointer;
-    font-size: .7em;
+    font-size: .3em;
 }
 #humans .humans-list ul {
     display: flex;
@@ -281,7 +285,7 @@
     bottom: 10%;
     left: 20px;
     color: #fff;
-    font-size: 2em;
+    font-size: 1em;
 }
 #humans .humans-title hr {
     border-color: var(--main-color);
@@ -294,6 +298,7 @@
     height: 40vh;
     display: flex;
     flex-direction: column;
+    font-size: .5em;
 }
 #notice > div {
     width: 100%;
@@ -325,7 +330,7 @@
     padding: 3vh 0;
 }
 #notice div a img {
-    width: 50px;
+    width: 30px;
     margin: 0 auto;
 }
 #notice div:hover a .notice-bg {
@@ -347,25 +352,16 @@ footer {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 50px;
+    padding: 30px;
+    font-size: .5em;
 }
 footer #footer-info .footer-menu {
     display: flex;
 }
 footer #footer-info .footer-menu li {
+    margin-right: 10px;
+}
 
-}
-footer #footer-info .footer-menu li:not(:last-child)::after {
-    content: "";
-    display: inline-block;
-    width: 4px;
-    width: 4px;
-    height: 4px;
-    border-radius: 50%;
-    background: #bbbbbb;
-    margin: 0px 11px 0;
-    transform: translateY(-3px);
-}
 footer #footer-info .footer-info {
     display: flex;
     flex-wrap: wrap;
@@ -393,9 +389,10 @@ footer #footer-sns {
     gap: 30px;
     margin-top: 20px;
 }
-footer #footer-sns .footer-sns {
-    
+footer #footer-sns .footer-sns a{
+    margin-right: 20px;
 }
 footer .footer-logo img{
     width: 200px;
+    margin-bottom: 20px;
 }
