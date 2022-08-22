@@ -302,6 +302,7 @@
     width: 50%;
     height: 100%;
     position: relative;
+    overflow: hidden;
 }
 #notice > div .notice-bg {
     background-image: url('images/boardImage02.png');
