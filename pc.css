@@ -243,6 +243,7 @@
 #humans .slider-wrap {
     width: 80%;
     height: 100%;
+    overflow: hidden;
 }
 #humans .slider-wrap .cont {
     display: flex;
@@ -251,7 +252,7 @@
 }
 #humans .slider-wrap .cont img {
     width: 90%;
-    height: 90%;
+    /* height: 90%; */
     display: block;
 }
 #humans .humans-list {
@@ -297,14 +298,50 @@
     height: 50vh;
     display: flex;
 }
-#notice div {
+#notice > div {
     width: 50%;
     height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+    position: relative;
 }
+#notice > div .notice-bg {
+    background-image: url('images/boardImage02.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+#notice > div:last-child .notice-bg{
+    background-image: url('images/boardImage03.png');
+}
+#notice div a {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-between;
+    color: #fff;
+    padding: 15vh 0;
+}
+#notice div a img {
+    width: 50px;
+    margin: 0 auto;
+}
+#notice div:hover a .notice-bg {
+    transform: scale(1.3);
+    transition: .5s;
+}
+#notice div:hover a .notice-title{
+    color: var(--main-color);
+}
+
+
+
+
 /* footer */
 footer {
     width: 100%;
@@ -360,4 +397,7 @@ footer #footer-sns {
 }
 footer #footer-sns .footer-sns {
     
+}
+footer .footer-logo img{
+    width: 200px;
 }

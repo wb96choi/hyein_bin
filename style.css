@@ -15,7 +15,10 @@ html {
     font-family: 'Noto Sans KR', sans-serif;
 }
 body {
-    background-color: #333;
+    
+}
+.slick-arrow {
+    display: none;
 }
 .wrap {
     width: 100vw;
