@@ -7,9 +7,9 @@ https://wb96choi.github.io/hyein_bin/
 
 ## 기존사이트와의 비교
 
-<img align="left" width="50%" src="readme/before-pc.png">
+<img width="50%" src="readme/before-pc.png">
 
-<img align="left" width="50%" src="readme/after-pc.png">
+<img width="50%" src="readme/after-pc.png">
 
 
 
