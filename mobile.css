@@ -30,7 +30,7 @@
     top: 50%;
     transform: translateY(-50%);
     left: 0;
-    width: 150px;
+    width: 100px;
 }
 #main-header .logo img:first-child {
     /* display: none; */
@@ -233,7 +233,7 @@
 /* humans */
 #humans {
     width: 100vw;
-    height: 60vh;
+    height: 30vh;
     position: relative;
     background-image: url('images/history-bg.jpg');
     background-repeat: no-repeat;
@@ -264,16 +264,19 @@
     display: flex;
     align-items: center;
     cursor: pointer;
-    font-size: .3em;
 }
 #humans .humans-list ul {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    gap: 3vh;
+    gap: 1vh;
 }
 #humans .humans-list ul > li{
-    
+    font-weight: 300;
+    font-size: .2em;
+}
+#humans .humans-list ul > li > h2{
+    font-size: 1em;
 }
 #humans .humans-list ul > li:hover,
 #humans .humans-list ul > li.on {
@@ -394,6 +397,6 @@ footer #footer-sns .footer-sns a{
     margin-right: 20px;
 }
 footer .footer-logo img{
-    width: 200px;
+    width: 100px;
     margin-bottom: 20px;
 }
