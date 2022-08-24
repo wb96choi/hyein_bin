@@ -9,7 +9,7 @@ https://wb96choi.github.io/hyein_bin/
 
 <img align="left" width="50%" src="readme/before-pc.png">
 
-<img align="right" width="50%" src="readme/after-pc.png">
+<img align="left" width="50%" src="readme/after-pc.png">
 
 
 
